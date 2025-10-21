@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{overflow-x: auto;}
+table{border-collapse: collapse;
+width: 900px;}
+thead>tr th{background-color: GREY;
+    color: aliceblue;
+    padding: 20px; border: 1px solid black;}
+tbody>tr td{padding: 20px; border: 1px solid black;}
+tbody>tr th{padding: 20px; border: 1px solid black;}
+.rowme {
+  background-color: grey;
+  color: whitesmoke;
+}
+.c1{ background-color: rgb(226, 239, 250);}
+.c2{ background-color: rgb(164, 205, 252);}
+.c3{ background-color: rgb(250, 252, 164);}
+.c4{ background-color: rgb(165, 194, 255);}
+.c5{ background-color: rgb(82, 100, 255);}
+iframe#tela{width:20vw;
+    height: 50vh;
+    border: 3px solid black;
+padding: 50px;}
+</style>
+<body>
+
+    <div>
+        <table>
+            <colgroup>
+                <col class="c1">
+                <col class="c2">
+                <col class="c3" span="2">
+                <col class="c4">
+        
+            </colgroup>
+            <caption><h1>desafio curso em video</h1></caption>
+            <thead><tr><th rowspan="2" scope="colgroup">Area</th> <th rowspan="2" scope="colgroup">Disciplinas</th><th colspan="2" scope="colgroup" >Notas</th><th rowspan="2" scope="colgroup">Média</th></tr>
+            <tr><th scope="colgroup">Nota1</th><th scope="colgroup">Nota 2</th></tr></thead>
+        
+        
+        
+            <tbody><tr><th rowspan="3" scope="rowgroup">Exatas</th><td>Mat</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>Mat</td><td>0</td><td>0</td><td>0</td></tr>
+        
+            <tr><td>Mat</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr class="rowme"><th colspan="4" scope="row">Média de Exatas</td><td>0</td></tr><tr>
+        <th rowspan="2" scope="rowgroup">Humanas</th><td>fil</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>pt</td><td>0</td><td>0</td><td>0</td></tr><tr class="rowme"><th colspan="4" scope="row" >Média de Humanas</td><td>0</td></tr>
+            </tr></tbody>
+        
+        </table>
+    </div>
+    <iframe src="exerciicotabela.html" style="border:0;" width="800" height="400"> <p class="erro">o seu navegador náo é compatível</p></iframe>
+
+    <iframe id="tela" name="frame" src="">
+        <p>seu navegador não é compativel!</p>
+    </iframe>
+    <a href="sticky.html" target="frame">Iframe</a>
+    <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3PHo9khm7sOBo3YpM7oKzo?utm_source=generator" sandbox="allow-forms allow-scripts" referrerpolicy="no-referrer" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+</body>
+</html>
